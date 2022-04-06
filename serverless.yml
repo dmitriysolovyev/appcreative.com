@@ -1,0 +1,19 @@
+service: weather-service
+app: weather-service
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  tags:
+    service: ${self:service}
+functions:
+  weatherFunction:
+    handler: src/handlers/weather.handle
+    events:
+      - http:
+          path: api/weather
+          method: get
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript

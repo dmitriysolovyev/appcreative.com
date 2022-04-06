@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "allowUnreachableCode": false,
+        "alwaysStrict": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["es2021", "dom", "esnext.asynciterable"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "outDir": ".build",
+        "resolveJsonModule": true,
+        "rootDir": "./",
+        "sourceMap": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "target": "ES2021",
+        "useUnknownInCatchVariables": false,
+        "preserveConstEnums": true,
+        "strictNullChecks": true,
+        "allowJs": true
+    },
+    "exclude": [
+        "node_modules",
+        "coverage",
+        "dist"
+    ]
+}
